@@ -30,7 +30,7 @@ async def video(ctx,*,url):
 async def music(ctx,*,url):
     await ctx.reply(f'> ** [+] We are Processing Audio **')
     video = pafy.new(url)
-    best = video.getbest()
+    best = video.getbestaudio()
     await ctx.send(f'> ** [+] Finished Processing Audio **')
     playurl = best.url
     shorting_site = requests.get("http://tinyurl.com/" + "api-create.php?url=" + playurl)
