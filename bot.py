@@ -62,4 +62,4 @@ async def help(ctx):
 async def change_status():
     status_change= ['Chilling Music! | .help','Abhushan | .help', 'Eating Brain | .help','Naughty Boy! | .help']
     await bot.change_presence(status=discord.Status.do_not_disturb,activity=discord.Game(choice(status_change)))
-bot.run('ODkyMzA2Mzk3NDExMjc4ODk4.YVK_Fw.pM9J1jnhp3WY1Lb2sDHURRIOpo8')
+bot.run('')
